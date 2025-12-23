@@ -1,0 +1,116 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Title -->
+  <text x="400" y="30" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">
+    Network Intrusion Detection - Data-Centric AI Pipeline
+  </text>
+  
+  <!-- Stage 1: Data -->
+  <rect x="50" y="60" width="180" height="80" rx="10" fill="#3498db" stroke="#2980b9" stroke-width="2"/>
+  <text x="140" y="90" font-size="14" font-weight="bold" fill="white" text-anchor="middle">CICIDS2017 Dataset</text>
+  <text x="140" y="110" font-size="11" fill="white" text-anchor="middle">2.8M raw flows</text>
+  <text x="140" y="125" font-size="11" fill="white" text-anchor="middle">80 Features</text>
+  
+  <!-- Arrow 1 -->
+  <path d="M 230 100 L 280 100" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="255" y="90" font-size="10" fill="#7f8c8d" text-anchor="middle">Select</text>
+  
+  <!-- Stage 2: Sample -->
+  <rect x="280" y="60" width="180" height="80" rx="10" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
+  <text x="370" y="90" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Dataset Selection</text>
+  <text x="370" y="110" font-size="11" fill="white" text-anchor="middle">1 Million records</text>
+  <text x="370" y="125" font-size="11" fill="white" text-anchor="middle">All attack types</text>
+  
+  <!-- Arrow 2 -->
+  <path d="M 460 100 L 510 100" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="485" y="90" font-size="10" fill="#7f8c8d" text-anchor="middle">Clean</text>
+  
+  <!-- Stage 3: Clean Data -->
+  <rect x="510" y="60" width="180" height="80" rx="10" fill="#1abc9c" stroke="#16a085" stroke-width="2"/>
+  <text x="600" y="90" font-size="14" font-weight="bold" fill="white" text-anchor="middle">High-Quality Data</text>
+  <text x="600" y="110" font-size="11" fill="white" text-anchor="middle">No missing/inf</text>
+  <text x="600" y="125" font-size="11" fill="white" text-anchor="middle">~920K Clean records</text>
+  
+  <!-- Arrow down -->
+  <path d="M 600 140 L 600 180" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="620" y="165" font-size="10" fill="#7f8c8d">Split</text>
+  
+  <!-- Stage 4: Split -->
+  <rect x="420" y="180" width="360" height="100" rx="10" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="2"/>
+  <text x="600" y="205" font-size="14" font-weight="bold" fill="#2c3e50" text-anchor="middle">Stratified Split (80/20)</text>
+  
+  <!-- Training Set -->
+  <rect x="440" y="220" width="150" height="50" rx="5" fill="#e74c3c" stroke="#c0392b" stroke-width="2"/>
+  <text x="515" y="240" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Training Set</text>
+  <text x="515" y="255" font-size="10" fill="white" text-anchor="middle">~736K records</text>
+  
+  <!-- Test Set -->
+  <rect x="610" y="220" width="150" height="50" rx="5" fill="#f39c12" stroke="#e67e22" stroke-width="2"/>
+  <text x="685" y="240" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Test Set</text>
+  <text x="685" y="255" font-size="10" fill="white" text-anchor="middle">~184K records</text>
+  
+  <!-- Arrow from training -->
+  <path d="M 515 270 L 515 320" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="540" y="300" font-size="10" fill="#7f8c8d">Train</text>
+  
+  <!-- Stage 5: Model Training -->
+  <rect x="400" y="320" width="230" height="80" rx="10" fill="#e67e22" stroke="#d35400" stroke-width="2"/>
+  <text x="515" y="345" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Model Engineering</text>
+  <text x="515" y="365" font-size="11" fill="white" text-anchor="middle">Random Forest Classifier</text>
+  <text x="515" y="380" font-size="11" fill="white" text-anchor="middle">Learn Attack Patterns</text>
+  
+  <!-- Arrow to trained model -->
+  <path d="M 515 400 L 515 440" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Stage 6: Trained Model -->
+  <rect x="400" y="440" width="230" height="60" rx="10" fill="#27ae60" stroke="#229954" stroke-width="2"/>
+  <text x="515" y="465" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Robust Model</text>
+  <text x="515" y="485" font-size="11" fill="white" text-anchor="middle">Ready for Deployment</text>
+  
+  <!-- Arrow from test set -->
+  <path d="M 685 270 Q 750 350 685 440" stroke="#34495e" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="720" y="355" font-size="10" fill="#7f8c8d" text-anchor="middle">Golden Test</text>
+  <text x="720" y="368" font-size="10" fill="#7f8c8d" text-anchor="middle">Validation</text>
+  
+  <!-- Stage 7: Results -->
+  <rect x="200" y="440" width="180" height="60" rx="10" fill="#8e44ad" stroke="#7d3c98" stroke-width="2"/>
+  <text x="290" y="465" font-size="14" font-weight="bold" fill="white" text-anchor="middle">High Reliability</text>
+  <text x="290" y="485" font-size="11" fill="white" text-anchor="middle">Precision: >99%</text>
+  
+  <!-- Arrow to results -->
+  <path d="M 400 470 L 380 470" stroke="#34495e" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Labels explanation box -->
+  <rect x="50" y="180" width="340" height="220" rx="10" fill="#fef9e7" stroke="#f4d03f" stroke-width="2"/>
+  <text x="220" y="205" font-size="14" font-weight="bold" fill="#7d6608" text-anchor="middle">Data Labels (Known)</text>
+  
+  <!-- Label examples -->
+  <circle cx="80" cy="230" r="8" fill="#27ae60"/>
+  <text x="100" y="235" font-size="11" fill="#2c3e50">BENIGN (Normal)</text>
+  
+  <circle cx="80" cy="255" r="8" fill="#e74c3c"/>
+  <text x="100" y="260" font-size="11" fill="#2c3e50">DDoS (Attack)</text>
+  
+  <circle cx="80" cy="280" r="8" fill="#e74c3c"/>
+  <text x="100" y="285" font-size="11" fill="#2c3e50">PortScan (Attack)</text>
+  
+  <circle cx="80" cy="305" r="8" fill="#e74c3c"/>
+  <text x="100" y="310" font-size="11" fill="#2c3e50">Brute Force (Attack)</text>
+  
+  <circle cx="80" cy="330" r="8" fill="#e74c3c"/>
+  <text x="100" y="335" font-size="11" fill="#2c3e50">Web Attack (Attack)</text>
+  
+  <text x="220" y="365" font-size="10" font-style="italic" fill="#7f8c8d" text-anchor="middle">Model learns to recognize</text>
+  <text x="220" y="380" font-size="10" font-style="italic" fill="#7f8c8d" text-anchor="middle">these patterns</text>
+  
+  <!-- Type of Learning -->
+  <rect x="50" y="520" width="700" height="60" rx="10" fill="#34495e" stroke="#2c3e50" stroke-width="2"/>
+  <text x="400" y="545" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Supervised Learning (Multi-class Classification)</text>
+  <text x="400" y="565" font-size="12" fill="#ecf0f1" text-anchor="middle">Model learns from labeled examples → Predicts labels for new data</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#34495e"/>
+    </marker>
+  </defs>
+</svg>

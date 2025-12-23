@@ -6,7 +6,12 @@ __pycache__/
 *.pyo
 .ipynb_checkpoints/
 
+
+# Models - Ignore generic but keep project artifacts
 *.pkl
+!ids_random_forest_model.pkl
+!ids_scaler.pkl
+!ids_label_encoder.pkl
 *.h5
 *.joblib
 
@@ -22,5 +27,4 @@ Thumbs.db
 desktop.ini
 
 cicids2017_project_plan.md
-project_simple_overview.svg
 QA_Project.docx
